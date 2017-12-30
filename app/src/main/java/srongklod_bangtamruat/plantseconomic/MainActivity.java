@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 import srongklod_bangtamruat.plantseconomic.fragment.MainFragment;
+import srongklod_bangtamruat.plantseconomic.fragment.ShowAllFragment;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,7 +18,8 @@ public class MainActivity extends AppCompatActivity {
 //        Add Fragment to Activity
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
-                    .add(R.id.contentMainFragment, new MainFragment()).commit();
+                    .add(R.id.contentMainFragment, new ShowAllFragment())
+                    .commit();
         }
 
     }//onCreate
